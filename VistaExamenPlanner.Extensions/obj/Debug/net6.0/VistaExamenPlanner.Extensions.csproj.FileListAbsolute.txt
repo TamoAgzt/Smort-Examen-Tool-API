@@ -1,0 +1,15 @@
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Extensions.deps.json
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Extensions.dll
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Extensions.pdb
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\obj\Debug\net6.0\VistaExamenPlanner.Extensions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\obj\Debug\net6.0\VistaExamenPlanner.Extensions.AssemblyInfoInputs.cache
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\obj\Debug\net6.0\VistaExamenPlanner.Extensions.AssemblyInfo.cs
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\obj\Debug\net6.0\VistaExamenPlanner.Extensions.csproj.CoreCompileInputs.cache
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\obj\Debug\net6.0\VistaExamenPlanner.Extensions.dll
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\obj\Debug\net6.0\refint\VistaExamenPlanner.Extensions.dll
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\obj\Debug\net6.0\VistaExamenPlanner.Extensions.pdb
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\obj\Debug\net6.0\ref\VistaExamenPlanner.Extensions.dll
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\obj\Debug\net6.0\VistaExamenPlanner.Extensions.csproj.AssemblyReference.cache
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Handler.dll
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Handler.pdb
+C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\obj\Debug\net6.0\VistaExamenPlanner.Extensions.csproj.CopyComplete
