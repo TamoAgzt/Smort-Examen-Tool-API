@@ -1,5 +1,8 @@
 ﻿using VistaExamenPlanner.Extensions;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Serilog;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace VistaExamenPlanner
 {
@@ -12,9 +15,9 @@ namespace VistaExamenPlanner
             Configuration = configuration;
         }
 
-
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllers();
 
             services.AddAuthorization();

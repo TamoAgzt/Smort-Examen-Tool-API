@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Google.Protobuf/3.21.9": {
         "type": "package",
         "compile": {
@@ -929,6 +942,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Microsoft.Extensions.Logging": "7.0.0",
           "MySql.Data": "8.1.0",
           "Newtonsoft.Json": "13.0.3",
@@ -944,6 +958,37 @@
     }
   },
   "libraries": {
+    "BCrypt.Net-Next/4.0.3": {
+      "sha512": "W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "type": "package",
+      "path": "bcrypt.net-next/4.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.4.0.3.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "ico.png",
+        "lib/net20/BCrypt.Net-Next.dll",
+        "lib/net20/BCrypt.Net-Next.xml",
+        "lib/net35/BCrypt.Net-Next.dll",
+        "lib/net35/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt.Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt.Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt.Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/net5.0/BCrypt.Net-Next.dll",
+        "lib/net5.0/BCrypt.Net-Next.xml",
+        "lib/net6.0/BCrypt.Net-Next.dll",
+        "lib/net6.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt.Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt.Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml",
+        "readme.md"
+      ]
+    },
     "Google.Protobuf/3.21.9": {
       "sha512": "OTpFujTgkmqMLbg3KT7F/iuKi1rg6s5FCS2M9XcVLDn40zL8wgXm37CY/F6MeOEXKjdcnXGCN/h7oyMkVydVsg==",
       "type": "package",
@@ -2775,23 +2820,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ecola\\.nuget\\packages\\": {},
+    "C:\\Users\\devilskey\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
+      "projectUniqueName": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
       "projectName": "VistaExamenPlanner.Extensions",
-      "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
-      "packagesPath": "C:\\Users\\ecola\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\obj\\",
+      "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
+      "packagesPath": "C:\\Users\\devilskey\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ecola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\devilskey\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2807,8 +2852,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
-              "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
+            "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
+              "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
             }
           }
         }

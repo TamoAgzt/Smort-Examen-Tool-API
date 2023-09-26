@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner\\VistaExamenPlanner.csproj": {}
+    "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {
+    "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
+        "projectUniqueName": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
         "projectName": "VistaExamenPlanner.Extensions",
-        "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
-        "packagesPath": "C:\\Users\\ecola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\obj\\",
+        "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
+        "packagesPath": "C:\\Users\\devilskey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ecola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\devilskey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
-                "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
+              "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
+                "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
               }
             }
           }
@@ -94,20 +94,20 @@
         }
       }
     },
-    "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
+    "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj",
+        "projectUniqueName": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj",
         "projectName": "VistaExamenPlanner.Handler",
-        "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj",
-        "packagesPath": "C:\\Users\\ecola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\obj\\",
+        "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj",
+        "packagesPath": "C:\\Users\\devilskey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ecola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\devilskey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -135,6 +135,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -172,20 +176,20 @@
         }
       }
     },
-    "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj": {
+    "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj",
+        "projectUniqueName": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj",
         "projectName": "VistaExamenPlanner.Objecten",
-        "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj",
-        "packagesPath": "C:\\Users\\ecola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Objecten\\obj\\",
+        "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj",
+        "packagesPath": "C:\\Users\\devilskey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ecola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\devilskey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -232,20 +236,20 @@
         }
       }
     },
-    "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner\\VistaExamenPlanner.csproj": {
+    "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
+        "projectUniqueName": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
         "projectName": "VistaExamenPlanner",
-        "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
-        "packagesPath": "C:\\Users\\ecola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner\\obj\\",
+        "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
+        "packagesPath": "C:\\Users\\devilskey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ecola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\devilskey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -261,14 +265,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {
-                "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj"
+              "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {
+                "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj"
               },
-              "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
-                "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
+              "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
+                "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
               },
-              "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj": {
-                "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj"
+              "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj": {
+                "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj"
               }
             }
           }
@@ -283,6 +287,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.4, )"

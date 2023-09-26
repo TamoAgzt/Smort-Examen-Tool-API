@@ -1,1 +1,6 @@
-﻿
+﻿CREATE TABLE `Klas` ( `Id` integer PRIMARY KEY AUTO_INCREMENT, `Naam` varchar(64), `Mentor` varchar(64));
+CREATE TABLE `Student` (`Id` integer PRIMARY KEY AUTO_INCREMENT, `Klas_Id` integer, `Student_Nummer` integer, `Naam` varchar(64), `Achternaam` varchar(64),`Email` varchar(128), `Wachtwoord` varchar(128),  FOREIGN KEY (`Klas_Id`) REFERENCES `Klas` (`Id`));
+CREATE TABLE `Lokaal` (`Id` integer PRIMARY KEY AUTO_INCREMENT, `Lokaal` varchar(32));
+CREATE TABLE `Toezichthouders` (`Id` integer PRIMARY KEY AUTO_INCREMENT,`Naam` varchar(32), Tussenvoegsel varchar(32), Achternaam varchar(32));
+CREATE TABLE `Examen` (`Id` integer PRIMARY KEY AUTO_INCREMENT, `Naam_Examen` varchar(64),`Vak_Examen` varchar(64), Toezichthouders_Id integer, FOREIGN KEY (`Toezichthouders_Id`) REFERENCES `Toezichthouders` (`Id`));
+CREATE TABLE `AgendaItem` (`Id` integer PRIMARY KEY AUTO_INCREMENT,`Klas_Id` integer,`Examen_Id` integer, Lokaal_Id integer, Tijd_Begin DateTime, Tijd_Einden DateTime, FOREIGN KEY (`Examen_Id`) REFERENCES `Examen` (`Id`),  FOREIGN KEY (`Klas_Id`) REFERENCES `Klas` (`Id`), FOREIGN KEY (`Lokaal_Id`) REFERENCES `Lokaal` (`Id`));

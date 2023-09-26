@@ -6,7 +6,7 @@ namespace VistaExamenPlanner.Handler
 {
     public class DatabaseHandler : IDisposable
     {
-        public MySqlConnection Connection { get; set; }
+        private MySqlConnection Connection { get; set; }
 
         private readonly ILogger Logger;
 
@@ -24,7 +24,7 @@ namespace VistaExamenPlanner.Handler
 
             Connection = new MySqlConnection(connectionString);
 
-            Connection.ConnectionString = connectionString;
+            Connection.ConnectionString = connectionString; ;
             Connection.Open();
         }
 
@@ -48,19 +48,17 @@ namespace VistaExamenPlanner.Handler
             sqlCommand.Connection = Connection;
             try
             {
-                sqlCommand.Prepare();
                 sqlCommand.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
-                Logger.Log(LogLevel.Error, $"ERROR: {ex.Message} : {ex.Data} : {ex} : {functie}");
+                Console.WriteLine($"ERROR: {ex.Message} : {ex.Data} : {ex} : {functie}");
             }
         }
 
         public string Select(MySqlCommand sqlCommand)
         {
             sqlCommand.Connection = Connection;
-            sqlCommand.Prepare();
             try
             {
                 using (MySqlDataReader SelectData = sqlCommand.ExecuteReader())
@@ -70,7 +68,7 @@ namespace VistaExamenPlanner.Handler
             }
             catch (Exception ex)
             {
-                Logger.Log(LogLevel.Error, $"ERROR: {ex.Message} : {ex.Data} : {ex}");
+                Console.WriteLine($"ERROR: {ex.Message} : {ex.Data} : {ex}");
                 return "";
             }
         }
