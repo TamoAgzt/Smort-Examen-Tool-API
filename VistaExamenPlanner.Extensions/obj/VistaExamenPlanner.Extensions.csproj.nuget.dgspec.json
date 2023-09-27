@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {}
+    "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {
+    "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
+        "projectUniqueName": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
         "projectName": "VistaExamenPlanner.Extensions",
-        "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
-        "packagesPath": "C:\\Users\\ecola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Extensions\\obj\\",
+        "projectPath": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj",
+        "packagesPath": "C:\\Users\\milan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ecola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\milan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
-                "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
+              "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
+                "projectPath": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
               }
             }
           }
@@ -80,8 +79,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -90,24 +88,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
+    "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj",
+        "projectUniqueName": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj",
         "projectName": "VistaExamenPlanner.Handler",
-        "projectPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj",
-        "packagesPath": "C:\\Users\\ecola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecola\\Desktop\\VistaExamenPlanner\\VistaExamenPlanner.Handler\\obj\\",
+        "projectPath": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj",
+        "packagesPath": "C:\\Users\\milan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ecola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\milan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -116,7 +114,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -158,8 +155,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -168,7 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

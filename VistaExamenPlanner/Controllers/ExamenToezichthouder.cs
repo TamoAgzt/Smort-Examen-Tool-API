@@ -41,7 +41,6 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new();
                 command.Connection = database.Connection;
-                var NewGuid = Guid.NewGuid();
 
                 command.CommandText = $"INSERT INTO Toezichthouders ( Naam,Tussenvoegsel,Achternaam) VALUES (@Name,@MiddleName,@LastName);";
                 command.Parameters.AddWithValue("@Name", toezichthouders.Name);

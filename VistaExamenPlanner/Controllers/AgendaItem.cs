@@ -41,7 +41,6 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new();
                 command.Connection = database.Connection;
-                var NewGuid = Guid.NewGuid();
                 command.CommandText = $"INSERT INTO AgendaItem ( Klas_Id, Examen_Id, Lokaal_Id,Tijd_Begin,Tijd_Einden) VALUES (@Klas_Id,@Examen_Id,@Lokaal_Id,@BeginTijd,@EindTijd);";
                 command.Parameters.AddWithValue("@Klas_Id", agendaItem.Klas_Id);
                 command.Parameters.AddWithValue("@Examen_Id", agendaItem.Examen_Id);

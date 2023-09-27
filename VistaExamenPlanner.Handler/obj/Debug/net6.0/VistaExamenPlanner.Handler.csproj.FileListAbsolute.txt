@@ -10,3 +10,15 @@ C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Handler\obj\Debug\n
 C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Handler\obj\Debug\net6.0\refint\VistaExamenPlanner.Handler.dll
 C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Handler\obj\Debug\net6.0\VistaExamenPlanner.Handler.pdb
 C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Handler\obj\Debug\net6.0\ref\VistaExamenPlanner.Handler.dll
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\bin\Debug\net6.0\VistaExamenPlanner.Handler.deps.json
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\bin\Debug\net6.0\VistaExamenPlanner.Handler.dll
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\bin\Debug\net6.0\ref\VistaExamenPlanner.Handler.dll
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\bin\Debug\net6.0\VistaExamenPlanner.Handler.pdb
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\obj\Debug\net6.0\VistaExamenPlanner.Handler.csproj.AssemblyReference.cache
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\obj\Debug\net6.0\VistaExamenPlanner.Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\obj\Debug\net6.0\VistaExamenPlanner.Handler.AssemblyInfoInputs.cache
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\obj\Debug\net6.0\VistaExamenPlanner.Handler.AssemblyInfo.cs
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\obj\Debug\net6.0\VistaExamenPlanner.Handler.csproj.CoreCompileInputs.cache
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\obj\Debug\net6.0\VistaExamenPlanner.Handler.dll
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\obj\Debug\net6.0\ref\VistaExamenPlanner.Handler.dll
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Handler\obj\Debug\net6.0\VistaExamenPlanner.Handler.pdb
