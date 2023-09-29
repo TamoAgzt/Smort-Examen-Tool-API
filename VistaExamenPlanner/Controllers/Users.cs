@@ -4,6 +4,7 @@ using VistaExamenPlanner.Handler;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
 using System.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace VistaExamenPlanner.Controllers
 {
@@ -17,8 +18,9 @@ namespace VistaExamenPlanner.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         [HttpGet]
-        [Route("DeleteUser")]
+        [Route("SelectUsers")]
         public void ListUsers([FromBody] int Id)
         {
             using (DatabaseHandler database = new DatabaseHandler())
@@ -28,6 +30,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpDelete]
         [Route("DeleteUser")]
         public void DeleteUser([FromBody] int Id)
@@ -93,12 +96,12 @@ namespace VistaExamenPlanner.Controllers
             }
             if (SecurityHandler.VerifyPassword(Login.Wachtwoord, LoginDataDatabase[0].Wachtwoord))
             {
-                return "TOKEN";
+                return JwtTokenHandler.GenerateToken("0");
             }
             return "404" ;
         }
 
-
+        [Authorize]
         [HttpPut]
         [Route("UpdateUser")]
         public void UpdateUser(UpdateUserObject updateUser)

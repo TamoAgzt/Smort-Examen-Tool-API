@@ -18,17 +18,37 @@ namespace VistaExamenPlanner
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddAuthentication(config =>
+            {
+                config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                config.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(config =>
+            {
+                config.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidIssuer = Configuration["JwtSettings:Issuer"],
+                    ValidAudience = Configuration["JwtSettings:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(Configuration["JwtSettings:Key"]!)),
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true
+                };
+            });
+
             services.AddControllers();
 
             services.AddAuthorization();
 
             services.AddMvc();
 
-            services.AddSwaggerGen();
-
             services.AddEndpointsApiExplorer();
 
             services.AddSerilog(Configuration);
+
+            services.AddSwaggerSecurityConfiguration();
 
         }
         public void Configure(IApplicationBuilder app)
@@ -36,11 +56,14 @@ namespace VistaExamenPlanner
 
             app.UseSerilogRequestLogging();
 
+            app.UseSwaggerDocumentation();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseDatabaseMigration();
 

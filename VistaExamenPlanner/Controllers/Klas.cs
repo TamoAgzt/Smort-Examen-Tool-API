@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using VistaExamenPlanner.Handler;
 using VistaExamenPlanner.Objecten;
@@ -7,6 +8,7 @@ namespace VistaExamenPlanner.Controllers
 {
     public class Klas : Controller
     {
+        [Authorize]
         [HttpGet]
         [Route("SelectAllKlasses")]
         public string SelectAllKlasses()
@@ -21,6 +23,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost]
         [Route("SelectOneKlasFromName")]
         public string SelectOneKlas([FromBody] string naam)
@@ -36,6 +39,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost]
         [Route("CreateKlas")]
         public void CreateKlas(CreateKlass klas)
@@ -52,6 +56,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpDelete]
         [Route("DeleteKlas")]
         public void DeleteKlas([FromBody] int id)

@@ -221,3 +221,5 @@ C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20230927.json
+C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\JWTsettings.json

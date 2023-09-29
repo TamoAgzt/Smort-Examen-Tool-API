@@ -732,6 +732,7 @@
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Sinks.Console": "4.1.0",
           "Serilog.Sinks.File": "5.0.0",
+          "Swashbuckle.AspNetCore": "6.5.0",
           "VistaExamenPlanner.Handler": "1.0.0"
         },
         "runtime": {
@@ -741,6 +742,7 @@
       "VistaExamenPlanner.Handler/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.22",
           "Microsoft.Extensions.Logging": "7.0.0",
           "MySql.Data": "8.1.0",
           "Newtonsoft.Json": "13.0.3",
