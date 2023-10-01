@@ -8,6 +8,7 @@ using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using VistaExamenPlanner.Objecten;
 
 namespace VistaExamenPlanner.Handler
 {
@@ -15,8 +16,7 @@ namespace VistaExamenPlanner.Handler
     {
         private const string TokenSecret = "IWANTTOSETHERAINBOWHIGHINTHESKYIWANTTOSOYOUANDMEONABIRDFLYAWAY";
 
-
-        public static String GenerateToken (string id)
+        public static String GenerateToken (int UserRol, int Id)
         {
            JwtSecurityTokenHandler jwtTokenHandler = new JwtSecurityTokenHandler ();
             RandomNumberGenerator random = RandomNumberGenerator.Create();
@@ -26,7 +26,8 @@ namespace VistaExamenPlanner.Handler
             var claims = new List<Claim>
             {
                 new("TimeCreated", DateTime.Now.ToString()),
-                new("Id", id)
+                new("Rol", UserRol.ToString()),
+                new("Id", Id.ToString())
             };
 
             SymmetricSecurityKey securityKey = new SymmetricSecurityKey(key);

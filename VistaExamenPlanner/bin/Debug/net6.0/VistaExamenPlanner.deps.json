@@ -746,7 +746,8 @@
           "Microsoft.Extensions.Logging": "7.0.0",
           "MySql.Data": "8.1.0",
           "Newtonsoft.Json": "13.0.3",
-          "Serilog": "3.0.1"
+          "Serilog": "3.0.1",
+          "VistaExamenPlanner.Objecten": "1.0.0"
         },
         "runtime": {
           "VistaExamenPlanner.Handler.dll": {}

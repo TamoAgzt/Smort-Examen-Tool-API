@@ -1204,7 +1204,8 @@
           "Microsoft.Extensions.Logging": "7.0.0",
           "MySql.Data": "8.1.0",
           "Newtonsoft.Json": "13.0.3",
-          "Serilog": "3.0.1"
+          "Serilog": "3.0.1",
+          "VistaExamenPlanner.Objecten": "1.0.0"
         },
         "compile": {
           "bin/placeholder/VistaExamenPlanner.Handler.dll": {}
@@ -3778,23 +3779,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\devilskey\\.nuget\\packages\\": {},
+    "C:\\Users\\ecola\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
+      "projectUniqueName": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
       "projectName": "VistaExamenPlanner",
-      "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
-      "packagesPath": "C:\\Users\\devilskey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\obj\\",
+      "projectPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
+      "packagesPath": "C:\\Users\\ecola\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\devilskey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ecola\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3810,14 +3811,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {
-              "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj"
+            "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {
+              "projectPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj"
             },
-            "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
-              "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
+            "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
+              "projectPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
             },
-            "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj": {
-              "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj"
+            "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj": {
+              "projectPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj"
             }
           }
         }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace VistaExamenPlanner.Objecten
 {
-    enum Rol
+    public enum Rol
     {
-        Student,
-        Docent,
-        Examen_Coördinator
+       Student = 1,
+       Docent = 2,
+       Examen_Coördinator = 3,
     }
 }

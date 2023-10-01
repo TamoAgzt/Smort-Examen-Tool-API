@@ -12,7 +12,6 @@ namespace VistaExamenPlanner.Objecten
         public string? achternaam { get; set; }
         public string? Email { get; set; }
         public string? Wachtwoord { get; set; }
-        public string? Mentor { get; set; }
         public string? klass { get; set; }
     }
 }

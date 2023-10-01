@@ -11,6 +11,6 @@ namespace VistaExamenPlanner.Objecten
         public string? naam { get; set; } 
         public string? achternaam { get; set; }
         public string? email { get; set; }
-        public int Id { get; set; }
+
     }
 }

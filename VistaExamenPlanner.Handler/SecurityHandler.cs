@@ -4,13 +4,13 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using VistaExamenPlanner.Objecten;
 using Bcrypt = BCrypt.Net.BCrypt;
 
 namespace VistaExamenPlanner.Handler
 {
     public static class SecurityHandler
     {
-
         public static string BcrypyBasicEncryption(string password)
         {
            return Bcrypt.EnhancedHashPassword(password, 10);

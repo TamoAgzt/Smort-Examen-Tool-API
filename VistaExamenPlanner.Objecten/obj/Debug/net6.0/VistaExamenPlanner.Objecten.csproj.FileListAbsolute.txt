@@ -20,3 +20,14 @@ C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\obj\Debug\net6.0\refint\VistaExamenPlanner.Objecten.dll
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\obj\Debug\net6.0\VistaExamenPlanner.Objecten.pdb
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\obj\Debug\net6.0\ref\VistaExamenPlanner.Objecten.dll
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\bin\Debug\net6.0\VistaExamenPlanner.Objecten.deps.json
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\bin\Debug\net6.0\VistaExamenPlanner.Objecten.dll
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\bin\Debug\net6.0\VistaExamenPlanner.Objecten.pdb
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\obj\Debug\net6.0\VistaExamenPlanner.Objecten.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\obj\Debug\net6.0\VistaExamenPlanner.Objecten.AssemblyInfoInputs.cache
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\obj\Debug\net6.0\VistaExamenPlanner.Objecten.AssemblyInfo.cs
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\obj\Debug\net6.0\VistaExamenPlanner.Objecten.csproj.CoreCompileInputs.cache
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\obj\Debug\net6.0\VistaExamenPlanner.Objecten.dll
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\obj\Debug\net6.0\refint\VistaExamenPlanner.Objecten.dll
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\obj\Debug\net6.0\VistaExamenPlanner.Objecten.pdb
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\obj\Debug\net6.0\ref\VistaExamenPlanner.Objecten.dll
