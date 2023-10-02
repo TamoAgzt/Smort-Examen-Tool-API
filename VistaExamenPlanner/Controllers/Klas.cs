@@ -9,7 +9,6 @@ namespace VistaExamenPlanner.Controllers
 {
     public class Klas : Controller
     {
-
         private readonly ILogger<Klas> _logger;
 
         public Klas(ILogger<Klas> logger)

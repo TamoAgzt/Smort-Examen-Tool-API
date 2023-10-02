@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
-using VistaExamenPlanner.Objecten;
 using Bcrypt = BCrypt.Net.BCrypt;
 
 namespace VistaExamenPlanner.Handler
@@ -56,7 +51,6 @@ namespace VistaExamenPlanner.Handler
                 byte[] hashedPassword = sha.ComputeHash(passwordBytes);
                 return Encoding.UTF8.GetString(hashedPassword);
             }
-
         }
     }
 }

@@ -1,0 +1,8 @@
+{"@t":"2023-10-02T12:37:52.3208079Z","@mt":"Database Migrated","Application":"webApi"}
+{"@t":"2023-10-02T12:37:53.2642842Z","@mt":"Now listening on: {address}","address":"https://localhost:7167","EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime","Application":"webApi"}
+{"@t":"2023-10-02T12:37:53.2720776Z","@mt":"Now listening on: {address}","address":"http://localhost:5263","EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime","Application":"webApi"}
+{"@t":"2023-10-02T12:37:53.2778525Z","@mt":"Application started. Press Ctrl+C to shut down.","SourceContext":"Microsoft.Hosting.Lifetime","Application":"webApi"}
+{"@t":"2023-10-02T12:37:53.2797319Z","@mt":"Hosting environment: {envName}","envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime","Application":"webApi"}
+{"@t":"2023-10-02T12:37:53.2812917Z","@mt":"Content root path: {contentRoot}","contentRoot":"C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner","SourceContext":"Microsoft.Hosting.Lifetime","Application":"webApi"}
+{"@t":"2023-10-02T12:37:54.8098141Z","@mt":"HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms","@r":["541.5642"],"RequestMethod":"GET","RequestPath":"/swagger/index.html","StatusCode":200,"Elapsed":541.5642,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","Application":"webApi"}
+{"@t":"2023-10-02T12:37:55.2869021Z","@mt":"HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms","@r":["224.9294"],"RequestMethod":"GET","RequestPath":"/swagger/v1.0/swagger.json","StatusCode":200,"Elapsed":224.9294,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","Application":"webApi"}

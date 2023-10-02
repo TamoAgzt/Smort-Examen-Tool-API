@@ -2,7 +2,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 
-
 namespace VistaExamenPlanner.Extensions
 {
     public static class AddSerilogExtension

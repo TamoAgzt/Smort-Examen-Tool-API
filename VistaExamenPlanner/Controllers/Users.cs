@@ -26,7 +26,7 @@ namespace VistaExamenPlanner.Controllers
             string Rol = User.FindFirstValue("Rol");
             if (Rol == "" || Rol != "3")
             {
-                _logger.Log(LogLevel.Information, $"SelectUsers: Someone without the rights tried to select a user.");
+                _logger.Log(LogLevel.Warning, $"SelectUsers: Someone without the rights tried to select a user.");
                 return;
             }
 
@@ -44,7 +44,7 @@ namespace VistaExamenPlanner.Controllers
         {
             if (Id == 1)
             {
-                _logger.Log(LogLevel.Information, $"DeleteUser: The admin account can not be deleted.");
+                _logger.Log(LogLevel.Warning, $"DeleteUser: The admin account can not be deleted.");
                 return "User Cant be deleted";
             }
 
@@ -87,7 +87,7 @@ namespace VistaExamenPlanner.Controllers
                 _logger.Log(LogLevel.Warning, $"ÇreateUser: Someone tried to create an account with an none vista email.");
                 return;
             }
-
+            
             string HashedWachtwoord = SecurityHandler.BcrypyBasicEncryption(account.Wachtwoord!);
 
             Rol NewUserRol = Rol.Student;
