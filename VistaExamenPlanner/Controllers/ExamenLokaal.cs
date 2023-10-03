@@ -22,7 +22,6 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new();
 
-                command.Connection = database.Connection;
                 command.CommandText = "SELECT * FROM Lokaal";
                 var result = database.Select(command);
                 return result;
@@ -40,7 +39,7 @@ namespace VistaExamenPlanner.Controllers
             using (DatabaseHandler database = new())
             {
                 MySqlCommand command = new();
-                command.Connection = database.Connection;
+
                 command.CommandText = $"INSERT INTO Lokaal (Lokaal) VALUES (@ExamenLokaal);";
                 command.Parameters.AddWithValue("@ExamenLokaal", lokaal.ExamenLokaal);
                 database.Insert(command);
@@ -54,10 +53,9 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new MySqlCommand();
 
-                command.Connection = database.Connection;
                 command.CommandText = $"DELETE FROM Lokaal WHERE Id = @IdToDropTable;";
                 command.Parameters.AddWithValue("@IdToDropTable", IdToDropTable);
-                database.Update(command);
+                database.Delete(command);
             }
         }
     }

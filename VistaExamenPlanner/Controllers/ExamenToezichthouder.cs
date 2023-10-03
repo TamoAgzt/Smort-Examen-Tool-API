@@ -22,7 +22,6 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new();
 
-                command.Connection = database.Connection;
                 command.CommandText = "SELECT * FROM Toezichthouders";
                 var result = database.Select(command);
                 return result;
@@ -40,7 +39,6 @@ namespace VistaExamenPlanner.Controllers
             using (DatabaseHandler database = new())
             {
                 MySqlCommand command = new();
-                command.Connection = database.Connection;
 
                 command.CommandText = $"INSERT INTO Toezichthouders ( Naam,Tussenvoegsel,Achternaam) VALUES (@Name,@MiddleName,@LastName);";
                 command.Parameters.AddWithValue("@Name", toezichthouders.Name);
@@ -58,10 +56,9 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new MySqlCommand();
 
-                command.Connection = database.Connection;
                 command.CommandText = $"DELETE FROM Toezichthouders WHERE Id = @IdToDropTable;";
                 command.Parameters.AddWithValue("@IdToDropTable", IdToDropTable);
-                database.Update(command);
+                database.Delete(command);
             }
         }
     }

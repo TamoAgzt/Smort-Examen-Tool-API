@@ -22,8 +22,21 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new();
 
-                command.Connection = database.Connection;
                 command.CommandText = "SELECT * FROM Examen";
+                var result = database.Select(command);
+                return result;
+            }
+        }
+
+        [HttpGet("GetExamensByClassId")]
+        public string GetExamensByClassId(string ClassId)
+        {
+            using (DatabaseHandler database = new())
+            {
+                MySqlCommand command = new();
+
+                command.CommandText = "SELECT Examen.Id, Examen.Naam_Examen, Examen.Vak_Examen , Examen.Toezichthouders_Id  FROM Examen , Klas  WHERE Klas.Id = @ClassId ; ";
+                command.Parameters.AddWithValue("@ClassId", ClassId);
                 var result = database.Select(command);
                 return result;
             }
@@ -40,7 +53,6 @@ namespace VistaExamenPlanner.Controllers
             using (DatabaseHandler database = new())
             {
                 MySqlCommand command = new();
-                command.Connection = database.Connection;
 
                 command.CommandText = $"INSERT INTO Examen ( Naam_Examen, Vak_Examen, Toezichthouders_Id) VALUES (@Naam_Examen,@Vak_Examen,@Toezichthouder_Id);";
                 command.Parameters.AddWithValue("@Naam_Examen", examen.Naam_Examen);
@@ -62,7 +74,6 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new MySqlCommand();
 
-                command.Connection = database.Connection;
                 command.CommandText = "UPDATE Examen SET Naam_Examen = @Naam_Examen, Vak_Examen = @Vak_Examen, Toezichthouders_Id = @Toezichthouder_Id WHERE Id = @IdToUpdate; ";
                 command.Parameters.AddWithValue("@Naam_Examen", examen.Naam_Examen);
                 command.Parameters.AddWithValue("@Vak_Examen", examen.Vak_Examen);
@@ -79,10 +90,9 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new MySqlCommand();
 
-                command.Connection = database.Connection;
                 command.CommandText = $"DELETE FROM Examen WHERE Id = @IdToDropTable;";
                 command.Parameters.AddWithValue("@IdToDropTable", IdToDropTable);
-                database.Update(command);
+                database.Delete(command);
             }
         }
     }

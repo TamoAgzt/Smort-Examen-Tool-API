@@ -208,3 +208,6 @@ C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExam
 C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner\obj\Debug\net6.0\ref\VistaExamenPlanner.dll
 C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner\obj\Debug\net6.0\VistaExamenPlanner.pdb
 C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner\obj\Debug\net6.0\VistaExamenPlanner.genruntimeconfig.cache
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20230927.json
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231002.json
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231003.json

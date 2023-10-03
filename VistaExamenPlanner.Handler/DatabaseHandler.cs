@@ -6,10 +6,9 @@ namespace VistaExamenPlanner.Handler
 {
     public class DatabaseHandler : IDisposable
     {
-        public MySqlConnection Connection { get; set; }
+        private MySqlConnection Connection { get; set; }
 
         private readonly ILogger Logger;
-
 
         public DatabaseHandler(ILogger<DatabaseHandler> logger = null)
         {
@@ -24,7 +23,7 @@ namespace VistaExamenPlanner.Handler
 
             Connection = new MySqlConnection(connectionString);
 
-            Connection.ConnectionString = connectionString;
+            Connection.ConnectionString = connectionString; ;
             Connection.Open();
         }
 
@@ -48,19 +47,17 @@ namespace VistaExamenPlanner.Handler
             sqlCommand.Connection = Connection;
             try
             {
-                sqlCommand.Prepare();
                 sqlCommand.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
-                Logger.Log(LogLevel.Error, $"ERROR: {ex.Message} : {ex.Data} : {ex} : {functie}");
+                Console.WriteLine($"ERROR: {ex.Message} : {ex.Data} : {ex} : {functie}");
             }
         }
 
         public string Select(MySqlCommand sqlCommand)
         {
             sqlCommand.Connection = Connection;
-            sqlCommand.Prepare();
             try
             {
                 using (MySqlDataReader SelectData = sqlCommand.ExecuteReader())
@@ -70,7 +67,7 @@ namespace VistaExamenPlanner.Handler
             }
             catch (Exception ex)
             {
-                Logger.Log(LogLevel.Error, $"ERROR: {ex.Message} : {ex.Data} : {ex}");
+                Console.WriteLine($"ERROR: {ex.Message} : {ex.Data} : {ex}");
                 return "";
             }
         }
@@ -92,7 +89,6 @@ namespace VistaExamenPlanner.Handler
             }
         }
 
-
         public string SqlReaderToJson(MySqlDataReader reader)
         {
             List<object> JsonList = new List<object>();
@@ -104,7 +100,6 @@ namespace VistaExamenPlanner.Handler
                     sqlDictionary.Add(reader.GetName(i), reader[i]);
                 }
                 JsonList.Add(sqlDictionary);
-
             }
             return JsonConvert.SerializeObject(JsonList);
         }
@@ -115,7 +110,7 @@ namespace VistaExamenPlanner.Handler
             {
                 return reader.GetInt32(0);
             }
-            
+
             return 0;
         }
 
@@ -136,6 +131,7 @@ namespace VistaExamenPlanner.Handler
                 }
             }
         }
+
         public void Dispose()
         {
             Connection.Close();
