@@ -22,7 +22,6 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new();
 
-                command.Connection = database.Connection;
                 command.CommandText = "SELECT * FROM AgendaItem";
                 var result = database.Select(command);
                 return result;
@@ -40,7 +39,7 @@ namespace VistaExamenPlanner.Controllers
             using (DatabaseHandler database = new())
             {
                 MySqlCommand command = new();
-                command.Connection = database.Connection;
+
                 command.CommandText = $"INSERT INTO AgendaItem ( Klas_Id, Examen_Id, Lokaal_Id,Tijd_Begin,Tijd_Einden) VALUES (@Klas_Id,@Examen_Id,@Lokaal_Id,@BeginTijd,@EindTijd);";
                 command.Parameters.AddWithValue("@Klas_Id", agendaItem.Klas_Id);
                 command.Parameters.AddWithValue("@Examen_Id", agendaItem.Examen_Id);
@@ -63,7 +62,6 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new MySqlCommand();
 
-                command.Connection = database.Connection;
                 command.CommandText = $"UPDATE AgendaItem SET Klas_Id = @Klas_Id, Examen_Id = @Examen_Id, Lokaal_Id = @Lokaal_Id,Tijd_Begin = @BeginTijd, Tijd_Einden = @EindTijd WHERE Id = @IdToUpdate; ";
                 command.Parameters.AddWithValue("@Klas_Id", agendaItem.Klas_Id);
                 command.Parameters.AddWithValue("@Examen_Id", agendaItem.Examen_Id);
@@ -82,10 +80,9 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new MySqlCommand();
 
-                command.Connection = database.Connection;
                 command.CommandText = $"DELETE FROM AgendaItem WHERE Id = @IdToDropTable;";
                 command.Parameters.AddWithValue("@IdToDropTable", IdToDropTable);
-                database.Update(command);
+                database.Delete(command);
             }
         }
     }
