@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using VistaExamenPlanner.Handler;
@@ -15,6 +16,7 @@ namespace VistaExamenPlanner.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         [HttpGet("GetExamens")]
         public string GetExamensList()
         {
@@ -42,6 +44,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost("AddExamen")]
         public void AddExamen(Examen examen)
         {
@@ -62,6 +65,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPut("UpdateExamen")]
         public void UpdateExamen(int IdToUpdate, Examen examen)
         {
@@ -83,6 +87,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost("DeleteExamen")]
         public void DeleteExamen(int IdToDropTable)
         {

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using VistaExamenPlanner.Handler;
@@ -15,6 +16,7 @@ namespace VistaExamenPlanner.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         [HttpGet("GetLokaal")]
         public string GetLokaal()
         {
@@ -28,6 +30,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost("AddLokaal")]
         public void AddLokaal(Lokaal lokaal)
         {
@@ -46,6 +49,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost("DeleteLokaal")]
         public void DeleteLokaal(int IdToDropTable)
         {
