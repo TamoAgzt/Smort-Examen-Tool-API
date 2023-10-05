@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using VistaExamenPlanner.Handler;
@@ -28,6 +29,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost("AddAgendaItem")]
         public void AddAgendaItem(AgendaItem agendaItem)
         {
@@ -50,6 +52,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPut("UpdateAgendaItem")]
         public void UpdateAgendaItem(int IdToUpdate, AgendaItem agendaItem)
         {
@@ -73,6 +76,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost("DeleteAgendaItem")]
         public void DeleteAgendaItem(int IdToDropTable)
         {

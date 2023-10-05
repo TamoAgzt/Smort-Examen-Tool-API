@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using VistaExamenPlanner.Handler;
@@ -15,6 +16,7 @@ namespace VistaExamenPlanner.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         [HttpGet("GetToeZichtHouder")]
         public string GetToezichtHouders()
         {
@@ -28,6 +30,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost("AddToeZichtHouder")]
         public void AddToeZichtHouder(Toezichthouders toezichthouders)
         {
@@ -49,6 +52,7 @@ namespace VistaExamenPlanner.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost("DeleteToezichthouder")]
         public void DeleteToezichthouder(int IdToDropTable)
         {
