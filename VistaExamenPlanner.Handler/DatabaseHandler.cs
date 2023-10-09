@@ -14,10 +14,10 @@ namespace VistaExamenPlanner.Handler
         {
             Logger = logger;
 
-            string DatabaseName = "SmortTestDb" ?? Environment.GetEnvironmentVariable("DatabaseDb");
-            string Password = "password" ?? Environment.GetEnvironmentVariable("PasswordDb");
-            string Username = "root" ?? Environment.GetEnvironmentVariable("UsernameDb");
-            string Server = "localhost" ?? Environment.GetEnvironmentVariable("HostDb");
+            string DatabaseName = Environment.GetEnvironmentVariable("DatabaseDb") ?? "SmortTestDb";
+            string Password =  Environment.GetEnvironmentVariable("PasswordDb") ?? "password";
+            string Username =  Environment.GetEnvironmentVariable("UsernameDb") ?? "root";
+            string Server = Environment.GetEnvironmentVariable("HostDb") ?? "localhost";
 
             string connectionString = $"server={Server};port=3306;uid={Username};pwd={Password};database={DatabaseName};";
 
