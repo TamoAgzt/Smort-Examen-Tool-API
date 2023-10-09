@@ -10,14 +10,12 @@ namespace VistaExamenPlanner.Handler
 
         public DatabaseHandler()
         {
-            string DatabaseName = "PortoDatabase";
-            string Password = "Dwm2OUbk1bt23oOI5ACoAUw23";
-            string Username = "root";
-            string Server = "devilskey.nl";
+            string DatabaseName = Environment.GetEnvironmentVariable("DatabaseDb")!;
+            string Password = Environment.GetEnvironmentVariable("PasswordDb")!;
+            string Username =  Environment.GetEnvironmentVariable("UsernameDb")!;
+            string Server = Environment.GetEnvironmentVariable("HostDb")!;
 
             string connectionString = $"server={Server};port=3306;uid={Username};pwd={Password};database={DatabaseName};";
-
-            Console.WriteLine(connectionString);
 
             Connection = new MySqlConnection(connectionString);
 
@@ -82,7 +80,7 @@ namespace VistaExamenPlanner.Handler
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"message: {ex.Message}, source {ex.Source}");
+                Console.WriteLine( $"message: {ex.Message}, source {ex.Source}");
                 return 0;
             }
         }
