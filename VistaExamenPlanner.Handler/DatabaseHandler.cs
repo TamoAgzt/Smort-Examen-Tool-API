@@ -8,12 +8,8 @@ namespace VistaExamenPlanner.Handler
     {
         private MySqlConnection Connection { get; set; }
 
-        private readonly ILogger Logger;
-
-        public DatabaseHandler(ILogger<DatabaseHandler> logger = null)
+        public DatabaseHandler()
         {
-            Logger = logger;
-
             string DatabaseName = Environment.GetEnvironmentVariable("DatabaseDb") ?? "SmortTestDb";
             string Password =  Environment.GetEnvironmentVariable("PasswordDb") ?? "password";
             string Username =  Environment.GetEnvironmentVariable("UsernameDb") ?? "root";
@@ -84,7 +80,7 @@ namespace VistaExamenPlanner.Handler
             }
             catch (Exception ex)
             {
-                Logger.Log(LogLevel.Error, $"message: {ex.Message}, source {ex.Source}");
+                Console.WriteLine($"message: {ex.Message}, source {ex.Source}");
                 return 0;
             }
         }
