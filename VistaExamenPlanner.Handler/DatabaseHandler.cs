@@ -17,6 +17,8 @@ namespace VistaExamenPlanner.Handler
 
             string connectionString = $"server={Server};port=3306;uid={Username};pwd={Password};database={DatabaseName};";
 
+            Console.WriteLine(connectionString);
+
             Connection = new MySqlConnection(connectionString);
 
             Connection.ConnectionString = connectionString; ;
