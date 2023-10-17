@@ -18,6 +18,8 @@ namespace VistaExamenPlanner
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.SetupCorseAny();
+
             services.AddAuthentication(config =>
             {
                 config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -53,6 +55,7 @@ namespace VistaExamenPlanner
         }
         public void Configure(IApplicationBuilder app)
         {
+            app.EnableCorse();
 
             app.UseSerilogRequestLogging();
 
