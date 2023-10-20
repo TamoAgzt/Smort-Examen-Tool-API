@@ -24,7 +24,7 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand SelectAllKlasses = new MySqlCommand();
 
-                SelectAllKlasses.CommandText = "SELECT Id, Naam FROM klass;";
+                SelectAllKlasses.CommandText = "SELECT Id, Naam FROM klas;";
 
                 return database.Select(SelectAllKlasses);
             }
