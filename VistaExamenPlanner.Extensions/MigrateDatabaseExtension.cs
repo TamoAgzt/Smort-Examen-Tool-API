@@ -23,7 +23,6 @@ namespace VistaExamenPlanner.Extensions
                 AddRoot.Parameters.AddWithValue("@password", SecurityHandler.BcrypyBasicEncryption("root"));
                 database.Insert(AddRoot);
             }
-          
         }
     }
 }
