@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using MySql.Data.MySqlClient;
 using Serilog;
 using Serilog.Core;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -16,6 +17,11 @@ namespace VistaExamenPlanner.Extensions
                 Log.Information("Database Migrated");
                 string[] qeuries = File.ReadAllLines("./Database.sql");
                 database.Migrate(qeuries);
+
+                MySqlCommand AddRoot = new MySqlCommand();
+                AddRoot.CommandText = "INSERT IGNORE INTO `Gebruikers` (Id, Rol_Id,Email, Wachtwoord, Naam, Achternaam) VALUES (1, 3, \"Root@vistacollege.nl\", @password, \"Root\", \"Root\");";
+                AddRoot.Parameters.AddWithValue("@password", SecurityHandler.BcrypyBasicEncryption("root"));
+                database.Insert(AddRoot);
             }
           
         }

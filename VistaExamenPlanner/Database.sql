@@ -9,4 +9,3 @@ CREATE TABLE IF NOT EXISTS `AgendaItem` (`Id` integer PRIMARY KEY AUTO_INCREMENT
 INSERT IGNORE INTO `Rol` (Id, Naam) VALUES (1, "Student");
 INSERT IGNORE INTO `Rol` (Id, Naam) VALUES (2, "Docent");
 INSERT IGNORE INTO `Rol` (Id, Naam) VALUES (3, "Examen Coordinator");
-INSERT IGNORE INTO `Gebruikers` (Id, Rol_Id,Email, Wachtwoord, Naam, Achternaam) VALUES (1, 3, "Root@vistacollege.nl", "$10$5ZC0mLoTYfR7trOvc51WiukUde.0/oFiqW6xMNMtHN4feZHAUmRfi", "Root", "Root");
