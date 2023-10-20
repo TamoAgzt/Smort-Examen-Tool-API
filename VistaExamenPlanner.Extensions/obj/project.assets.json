@@ -3657,6 +3657,7 @@
     "net6.0": [
       "Microsoft.Extensions.Configuration.Abstractions >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 7.0.0",
+      "MySql.Data >= 8.1.0",
       "Serilog >= 3.0.1",
       "Serilog.AspNetCore >= 7.0.0",
       "Serilog.Sinks.Console >= 4.1.0",
@@ -3721,6 +3722,10 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "MySql.Data": {
+            "target": "Package",
+            "version": "[8.1.0, )"
           },
           "Serilog": {
             "target": "Package",

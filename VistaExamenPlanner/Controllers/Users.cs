@@ -162,6 +162,8 @@ namespace VistaExamenPlanner.Controllers
 
             UserData[] LoginDataDatabase = JsonConvert.DeserializeObject<UserData[]>(UserDataSelect)!;
 
+            if (LoginDataDatabase == null)
+                return null;
 
             if (SecurityHandler.VerifyPassword(Login.Wachtwoord, LoginDataDatabase[0].Wachtwoord))
             {
