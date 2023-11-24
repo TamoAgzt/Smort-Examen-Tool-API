@@ -16,5 +16,7 @@ namespace VistaExamenPlanner.Extensions
 
         public Gebruikers[] Toezichterhouders { get; set; }
 
+        public string Lokaal { get; set; } = string.Empty;
+
     }
 }
