@@ -8,7 +8,7 @@ namespace VistaExamenPlanner.Objecten
 {
     public class Examen
     {
-        public int Toezichthouder_Id { get; set; }
+        public int Toezichthouders_Id { get; set; }
         public string? Naam_Examen { get; set; }
         public string? Vak_Examen { get; set; }
     }
