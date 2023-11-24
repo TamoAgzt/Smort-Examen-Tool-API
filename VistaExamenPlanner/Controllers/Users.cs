@@ -117,16 +117,20 @@ namespace VistaExamenPlanner.Controllers
                 //Create User
                 using (MySqlCommand InsertUser = new MySqlCommand())
                 {
-                    InsertUser.CommandText = "INSERT INTO Gebruikers (Rol_Id, Naam, Achternaam, Email, Wachtwoord) VALUES (@Rol, @Naam, @Achternaam, @Email, @Wachtwoord);" +
-                        "INSERT INTO Student (studenten_nummer, Gebruikers_Id, Klas_Id) VALUES (@StudentenNummer, LAST_INSERT_ID(), (SELECT Id FROM Klas WHERE Naam=@NaamKlas));";
+                    InsertUser.CommandText = "INSERT INTO Gebruikers (Rol_Id, Naam, Achternaam, Email, Wachtwoord) VALUES (@Rol, @Naam, @Achternaam, @Email, @Wachtwoord);";
+
+                    if(NewUserRol == Rol.Student)
+                    {
+                        InsertUser.CommandText += "INSERT INTO Student (studenten_nummer, Gebruikers_Id, Klas_Id) VALUES (@StudentenNummer, LAST_INSERT_ID(), (SELECT Id FROM Klas WHERE Naam=@NaamKlas));";
+                        InsertUser.Parameters.AddWithValue("@StudentenNummer", RegexAndTextHandler.GetStudentNumber(account.Email));
+                        InsertUser.Parameters.AddWithValue("@NaamKlas", account.klass);
+                    }
 
                     InsertUser.Parameters.AddWithValue("@Rol", NewUserRol);
                     InsertUser.Parameters.AddWithValue("@Wachtwoord", HashedWachtwoord);
                     InsertUser.Parameters.AddWithValue("@Naam", account.naam);
                     InsertUser.Parameters.AddWithValue("@Achternaam", account.achternaam);
                     InsertUser.Parameters.AddWithValue("@Email", account.Email);
-                    InsertUser.Parameters.AddWithValue("@NaamKlas", account.klass);
-                    InsertUser.Parameters.AddWithValue("@StudentenNummer", RegexAndTextHandler.GetStudentNumber(account.Email));
 
                     database.Insert(InsertUser);
                 }

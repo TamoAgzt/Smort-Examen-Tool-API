@@ -27,7 +27,7 @@ namespace VistaExamenPlanner.Handler
             {
                 new("TimeCreated", DateTime.Now.ToString()),
                 new("Rol", UserRol.ToString()),
-                new("Id", Id.ToString())
+                new("Id", Id.ToString()),
             };
 
             SymmetricSecurityKey securityKey = new SymmetricSecurityKey(key);

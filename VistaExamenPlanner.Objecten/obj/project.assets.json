@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\devilskey\\.nuget\\packages\\": {},
+    "C:\\Users\\ecola\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj",
+      "projectUniqueName": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj",
       "projectName": "VistaExamenPlanner.Objecten",
-      "projectPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj",
-      "packagesPath": "C:\\Users\\devilskey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\devilskey\\Documents\\Gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\obj\\",
+      "projectPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj",
+      "packagesPath": "C:\\Users\\ecola\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\devilskey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ecola\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
