@@ -426,3 +426,4 @@ C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231009.json
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\Database.sql
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231017.json
+C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231122.json

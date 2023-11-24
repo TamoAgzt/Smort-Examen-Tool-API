@@ -114,17 +114,19 @@ namespace VistaExamenPlanner.Controllers
                     }
                 }
 
-
                 //Create User
                 using (MySqlCommand InsertUser = new MySqlCommand())
                 {
-                    InsertUser.CommandText = "INSERT INTO Gebruikers (Rol_Id, Naam, Achternaam, Email, Wachtwoord) VALUES (@Rol, @Naam, @Achternaam, @Email, @Wachtwoord);";
+                    InsertUser.CommandText = "INSERT INTO Gebruikers (Rol_Id, Naam, Achternaam, Email, Wachtwoord) VALUES (@Rol, @Naam, @Achternaam, @Email, @Wachtwoord);" +
+                        "INSERT INTO Student (studenten_nummer, Gebruikers_Id, Klas_Id) VALUES (@StudentenNummer, LAST_INSERT_ID(), (SELECT Id FROM Klas WHERE Naam=@NaamKlas));";
 
                     InsertUser.Parameters.AddWithValue("@Rol", NewUserRol);
                     InsertUser.Parameters.AddWithValue("@Wachtwoord", HashedWachtwoord);
                     InsertUser.Parameters.AddWithValue("@Naam", account.naam);
                     InsertUser.Parameters.AddWithValue("@Achternaam", account.achternaam);
                     InsertUser.Parameters.AddWithValue("@Email", account.Email);
+                    InsertUser.Parameters.AddWithValue("@NaamKlas", account.klass);
+                    InsertUser.Parameters.AddWithValue("@StudentenNummer", RegexAndTextHandler.GetStudentNumber(account.Email));
 
                     database.Insert(InsertUser);
                 }
@@ -265,6 +267,27 @@ namespace VistaExamenPlanner.Controllers
             _logger.Log(LogLevel.Information, $"DeleteAccount: User Deleted His/her Account.");
 
             return "BYE BYE";
+        }
+
+
+        [Authorize]
+        [HttpGet]
+        [Route("GetUserData")]
+        public string GetUserData()
+        {
+            string Id = User.FindFirstValue("Id");
+            string dataUser = "";
+
+            using (DatabaseHandler database = new DatabaseHandler())
+            {
+                MySqlCommand SelectUser = new MySqlCommand();
+                SelectUser.CommandText = "SELECT Naam, Achternaam FROM Gebruikers WHERE Id=@Id;";
+                SelectUser.Parameters.AddWithValue("@Id", Id);
+                dataUser = database.Select(SelectUser);
+            }
+            _logger.Log(LogLevel.Information, $"GetUserData: A user his Firstname and Lastname where requested and given.");
+
+            return dataUser;
         }
     }
 }

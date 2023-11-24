@@ -46,8 +46,8 @@ namespace VistaExamenPlanner.Controllers
                 command.Parameters.AddWithValue("@Klas_Id", agendaItem.Klas_Id);
                 command.Parameters.AddWithValue("@Examen_Id", agendaItem.Examen_Id);
                 command.Parameters.AddWithValue("@Lokaal_Id", agendaItem.Lokaal_Id);
-                command.Parameters.AddWithValue("@BeginTijd", agendaItem.BeginTijd);
-                command.Parameters.AddWithValue("@EindTijd", agendaItem.EindTijd);
+                command.Parameters.AddWithValue("@BeginTijd", agendaItem.Tijd_Begin);
+                command.Parameters.AddWithValue("@EindTijd", agendaItem.Tijd_Einden);
                 database.Insert(command);
             }
         }
@@ -69,8 +69,8 @@ namespace VistaExamenPlanner.Controllers
                 command.Parameters.AddWithValue("@Klas_Id", agendaItem.Klas_Id);
                 command.Parameters.AddWithValue("@Examen_Id", agendaItem.Examen_Id);
                 command.Parameters.AddWithValue("@Lokaal_Id", agendaItem.Lokaal_Id);
-                command.Parameters.AddWithValue("@BeginTijd", agendaItem.BeginTijd);
-                command.Parameters.AddWithValue("@EindTijd", agendaItem.EindTijd);
+                command.Parameters.AddWithValue("@BeginTijd", agendaItem.Tijd_Begin);
+                command.Parameters.AddWithValue("@EindTijd", agendaItem.Tijd_Einden);
                 command.Parameters.AddWithValue("@IdToUpdate", IdToUpdate);
                 database.Update(command);
             }
@@ -89,5 +89,6 @@ namespace VistaExamenPlanner.Controllers
                 database.Delete(command);
             }
         }
+
     }
 }
