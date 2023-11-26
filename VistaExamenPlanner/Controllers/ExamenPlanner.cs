@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
 using System.Security.Claims;
@@ -283,7 +284,7 @@ public class ExamenPlanner : ControllerBase
 
             SelectAgendaItem.Parameters.AddWithValue("@TimeStartWeek", new DateTime(year, month, 1)) ;
 
-            SelectAgendaItem.Parameters.AddWithValue("@TimeEndWeek", new DateTime(year, month, DateTime.DaysInMonth(year, month))) ;
+            SelectAgendaItem.Parameters.AddWithValue("@TimeEndWeek", new DateTime(year, month, DateTime.DaysInMonth(year, month), 23, 59, 59)) ;
 
 
             string DataAgendaItem = database.Select(SelectAgendaItem);
