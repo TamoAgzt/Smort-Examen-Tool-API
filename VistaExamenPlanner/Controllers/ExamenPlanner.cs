@@ -189,6 +189,13 @@ public class ExamenPlanner : ControllerBase
 
                 Examen[] examenData = JsonConvert.DeserializeObject<Examen[]>(database.Select(SelectExamen))!;
 
+                MySqlCommand SelectLokaal = new();
+
+                SelectLokaal.CommandText = "SELECT Lokaal FROM Lokaal WHERE Id=@Id;";
+                SelectLokaal.Parameters.AddWithValue("@Id", Item.Lokaal_Id);
+
+                LokaalObject[] Lokaal = JsonConvert.DeserializeObject<LokaalObject[]>(database.Select(SelectLokaal))!;
+
                 if (rolUser == "2")
                 {
                     if (examenData[0].Toezichthouders_Id.ToString() == UserId)
@@ -204,7 +211,9 @@ public class ExamenPlanner : ControllerBase
                         {
                             agendaItem = Item,
                             examenItem = examenData[0],
-                            Toezichterhouders = Toezichthouder
+                            Toezichterhouders = Toezichthouder,
+                            Lokaal = Lokaal[0].Lokaal
+
                         });
                     }
                 }
@@ -220,7 +229,8 @@ public class ExamenPlanner : ControllerBase
                     {
                         agendaItem = Item,
                         examenItem = examenData[0],
-                        Toezichterhouders = Toezichthouder
+                        Toezichterhouders = Toezichthouder,
+                        Lokaal = Lokaal[0].Lokaal
                     });
                 }
             }
@@ -278,7 +288,7 @@ public class ExamenPlanner : ControllerBase
 
             string DataAgendaItem = database.Select(SelectAgendaItem);
 
-            AgendaItem[] agendaItemExamen = JsonConvert.DeserializeObject<AgendaItem[]>(DataAgendaItem);
+            AgendaItem[] agendaItemExamen = JsonConvert.DeserializeObject<AgendaItem[]>(DataAgendaItem)!;
 
             if (agendaItemExamen.Length == 0)
                 return null;
@@ -292,6 +302,15 @@ public class ExamenPlanner : ControllerBase
                 SelectExamen.Parameters.AddWithValue("@Id", Item.Examen_Id);
 
                 Examen[] examenData = JsonConvert.DeserializeObject<Examen[]>(database.Select(SelectExamen))!;
+
+                MySqlCommand SelectLokaal = new();
+
+                SelectLokaal.CommandText = "SELECT Lokaal FROM Lokaal WHERE Id=@Id;";
+                SelectLokaal.Parameters.AddWithValue("@Id", Item.Lokaal_Id);
+
+                _logger.Log(LogLevel.Information, database.Select(SelectLokaal));
+
+                LokaalObject[] Lokaal = JsonConvert.DeserializeObject<LokaalObject[]>(database.Select(SelectLokaal))!;
 
                 if (rolUser == "2")
                 {
@@ -308,8 +327,9 @@ public class ExamenPlanner : ControllerBase
                         {
                             agendaItem = Item,
                             examenItem = examenData[0],
-                            Toezichterhouders = Toezichthouder
-                        });
+                            Toezichterhouders = Toezichthouder,
+                            Lokaal = Lokaal[0].Lokaal
+                        }); ;
                     }
                 }
                 else
@@ -324,7 +344,9 @@ public class ExamenPlanner : ControllerBase
                     {
                         agendaItem = Item,
                         examenItem = examenData[0],
-                        Toezichterhouders = Toezichthouder
+                        Toezichterhouders = Toezichthouder,
+                        Lokaal = Lokaal[0].Lokaal
+
                     });
                 }
             }
