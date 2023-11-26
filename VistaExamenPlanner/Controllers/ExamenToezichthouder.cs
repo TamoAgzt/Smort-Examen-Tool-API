@@ -24,7 +24,7 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand command = new();
 
-                command.CommandText = "SELECT Naam, Achternaam FROM Gebruikers WHERE Rol_Id=2 ";
+                command.CommandText = "SELECT Id, Naam, Achternaam FROM Gebruikers WHERE Rol_Id=2 ";
                 var result = database.Select(command);
                 return result;
             }
