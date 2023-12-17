@@ -29,10 +29,10 @@ namespace VistaExamenPlanner
             {
                 config.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidIssuer = Configuration["JwtSettings:Issuer"],
-                    ValidAudience = Configuration["JwtSettings:Audience"],
+                    ValidIssuer = Environment.GetEnvironmentVariable("ValidIssuer") ?? "http://localhost",
+                    ValidAudience = Environment.GetEnvironmentVariable("ValidAudience") ?? "http://localhost",
                     IssuerSigningKey = new SymmetricSecurityKey(
-                        Encoding.UTF8.GetBytes(Configuration["JwtSettings:Key"]!)),
+                        Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JwtKey") ?? "IAmAreallyGoodKey")),
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidateLifetime = true,

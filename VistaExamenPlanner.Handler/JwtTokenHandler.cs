@@ -14,7 +14,7 @@ namespace VistaExamenPlanner.Handler
 {
     public static class JwtTokenHandler
     {
-        private const string TokenSecret = "IWANTTOSETHERAINBOWHIGHINTHESKYIWANTTOSOYOUANDMEONABIRDFLYAWAY";
+        public static string TokenSecret = Environment.GetEnvironmentVariable("JwtKey")! ?? "IAmAreallyGoodKey";
 
         public static String GenerateToken (int UserRol, int Id)
         {
@@ -37,8 +37,8 @@ namespace VistaExamenPlanner.Handler
             {
                 Subject = new ClaimsIdentity(claims),
                 Expires = DateTime.Now.AddHours(8),
-                Issuer = "http://localhost",
-                Audience = "http://localhost",
+                Issuer = Environment.GetEnvironmentVariable("ValidIssuer")! ?? "http://localhost",
+                Audience = Environment.GetEnvironmentVariable("ValidAudience")! ?? "http://localhost",
                 SigningCredentials = credentials
             };
 

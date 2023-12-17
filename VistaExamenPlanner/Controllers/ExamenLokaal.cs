@@ -50,11 +50,18 @@ namespace VistaExamenPlanner.Controllers
         }
 
         [Authorize]
-        [HttpPost("DeleteLokaal")]
+        [HttpDelete("DeleteLokaal")]
         public void DeleteLokaal(int IdToDropTable)
         {
             using (DatabaseHandler database = new())
             {
+
+                MySqlCommand DropFromAgenda = new MySqlCommand();
+
+                DropFromAgenda.CommandText = $"DELETE FROM AgendaItem WHERE Lokaal_Id = @IdToDropTable;";
+                DropFromAgenda.Parameters.AddWithValue("@IdToDropTable", IdToDropTable);
+                database.Delete(DropFromAgenda);
+
                 MySqlCommand command = new MySqlCommand();
 
                 command.CommandText = $"DELETE FROM Lokaal WHERE Id = @IdToDropTable;";

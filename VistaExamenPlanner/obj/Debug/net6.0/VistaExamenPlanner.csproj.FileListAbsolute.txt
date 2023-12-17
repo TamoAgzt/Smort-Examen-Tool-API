@@ -434,3 +434,4 @@ C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\
 C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231124.json
 C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231125.json
 C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231126.json
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\obj\Debug\net6.0\VistaExamenPlanner.sourcelink.json

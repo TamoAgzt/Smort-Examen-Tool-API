@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using MySql.Data.MySqlClient;
 using Serilog;
-using Serilog.Core;
-using System.ComponentModel.DataAnnotations.Schema;
-using VistaExamenPlanner.Extensions;
 using VistaExamenPlanner.Handler;
 
 namespace VistaExamenPlanner.Extensions
 {
     public static class MigrateDatabaseExtension
     {
+        private static string MigratePassword = Environment.GetEnvironmentVariable("PasswordRootAccount") ?? "root";
+        private static string MigrateEmail = Environment.GetEnvironmentVariable("EmailRootAccount") ?? "Root@vistacollege.nl";
+        private static string MigrateNaam = Environment.GetEnvironmentVariable("NameRootAccount") ?? "Root";
+        private static string MigrateLastName = Environment.GetEnvironmentVariable("LastNameRootAccount") ?? "Root";
         public static void UseDatabaseMigration(this IApplicationBuilder app)
         {
             using (DatabaseHandler database = new DatabaseHandler())
@@ -19,9 +20,17 @@ namespace VistaExamenPlanner.Extensions
                 database.Migrate(qeuries);
 
                 MySqlCommand AddRoot = new MySqlCommand();
-                AddRoot.CommandText = "INSERT IGNORE INTO `Gebruikers` (Id, Rol_Id,Email, Wachtwoord, Naam, Achternaam) VALUES (1, 3, \"Root@vistacollege.nl\", @password, \"Root\", \"Root\");";
-                AddRoot.Parameters.AddWithValue("@password", SecurityHandler.BcrypyBasicEncryption("root"));
+                AddRoot.CommandText = $"INSERT IGNORE INTO `Gebruikers` (Id, Rol_Id,Email, Wachtwoord, Naam, Achternaam) VALUES (1, 3, @Email, @password, @Name, @LastName);";
+                AddRoot.Parameters.AddWithValue("@password", SecurityHandler.BcrypyBasicEncryption(MigratePassword));
+                AddRoot.Parameters.AddWithValue("@Email", MigrateEmail);
+                AddRoot.Parameters.AddWithValue("@Name", MigrateNaam);
+                AddRoot.Parameters.AddWithValue("@LastName", MigrateLastName);
                 database.Insert(AddRoot);
+
+                MigratePassword = "";
+                MigrateLastName = "";
+                MigrateEmail = "";
+                MigrateNaam = "";
             }
         }
     }

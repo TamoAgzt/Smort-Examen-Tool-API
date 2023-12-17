@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VistaExamenPlanner.Objecten
 build_property.ProjectDir = C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Objecten\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
