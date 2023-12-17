@@ -10,5 +10,6 @@ namespace VistaExamenPlanner.Objecten
     {
         public string Token { get; set; } = "";
         public int Rol { get; set; }
+        public bool isLoggedIn { get; set; }
     }
 }

@@ -146,7 +146,6 @@ public class ExamenPlanner : ControllerBase
 
         using (DatabaseHandler database = new())
         {
-
             _logger.Log(LogLevel.Debug, rolUser);
 
             if (rolUser == "1")
@@ -168,10 +167,8 @@ public class ExamenPlanner : ControllerBase
             else
                 SelectAgendaItem.CommandText = "SELECT Klas_Id, Examen_Id, Lokaal_Id, Tijd_Begin, Tijd_Einden FROM AgendaItem WHERE Tijd_Begin >= @TimeStartWeek AND Tijd_Einden <= @TimeEndWeek;";
 
-
             SelectAgendaItem.Parameters.AddWithValue("@TimeStartWeek", DateTime.Now);
             SelectAgendaItem.Parameters.AddWithValue("TimeEndWeek", DateTime.Now.AddDays(7));
-
 
             string DataAgendaItem = database.Select(SelectAgendaItem);
 
@@ -182,7 +179,6 @@ public class ExamenPlanner : ControllerBase
 
             foreach (AgendaItem Item in agendaItemExamen)
             {
-
                 MySqlCommand SelectExamen = new();
 
                 SelectExamen.CommandText = "SELECT Naam_Examen, Vak_Examen, Toezichthouders_Id FROM Examen WHERE Id=@Id;";
@@ -201,7 +197,6 @@ public class ExamenPlanner : ControllerBase
                 {
                     if (examenData[0].Toezichthouders_Id.ToString() == UserId)
                     {
-
                         MySqlCommand SelectToezichthouder = new();
                         SelectToezichthouder.CommandText = "SELECT Naam, Achternaam FROM Gebruikers WHERE Id=@Id;";
                         SelectToezichthouder.Parameters.AddWithValue("@Id", examenData[0].Toezichthouders_Id);
@@ -214,7 +209,6 @@ public class ExamenPlanner : ControllerBase
                             examenItem = examenData[0],
                             Toezichterhouders = Toezichthouder,
                             Lokaal = Lokaal[0].Lokaal
-
                         });
                     }
                 }
@@ -244,13 +238,11 @@ public class ExamenPlanner : ControllerBase
     [HttpGet("GetExamesForAMonth")]
     public List<ExamenWeekItem>? GetExamesForAMonth(int month = 0, int year = 0)
     {
-
         if (month == 0)
             month = DateTime.Now.Month;
 
         if (year == 0)
             year = DateTime.Now.Year;
-
 
         string rolUser = User.FindFirstValue("Rol");
         string UserId = User.FindFirstValue("Id");
@@ -260,7 +252,6 @@ public class ExamenPlanner : ControllerBase
 
         using (DatabaseHandler database = new())
         {
-
             _logger.Log(LogLevel.Debug, rolUser);
 
             if (rolUser == "1")
@@ -282,10 +273,9 @@ public class ExamenPlanner : ControllerBase
             else
                 SelectAgendaItem.CommandText = "SELECT Klas_Id, Examen_Id, Lokaal_Id, Tijd_Begin, Tijd_Einden FROM AgendaItem WHERE Tijd_Begin >= @TimeStartWeek AND Tijd_Einden <= @TimeEndWeek;";
 
-            SelectAgendaItem.Parameters.AddWithValue("@TimeStartWeek", new DateTime(year, month, 1)) ;
+            SelectAgendaItem.Parameters.AddWithValue("@TimeStartWeek", new DateTime(year, month, 1));
 
-            SelectAgendaItem.Parameters.AddWithValue("@TimeEndWeek", new DateTime(year, month, DateTime.DaysInMonth(year, month), 23, 59, 59)) ;
-
+            SelectAgendaItem.Parameters.AddWithValue("@TimeEndWeek", new DateTime(year, month, DateTime.DaysInMonth(year, month), 23, 59, 59));
 
             string DataAgendaItem = database.Select(SelectAgendaItem);
 
@@ -296,7 +286,6 @@ public class ExamenPlanner : ControllerBase
 
             foreach (AgendaItem Item in agendaItemExamen)
             {
-
                 MySqlCommand SelectExamen = new();
 
                 SelectExamen.CommandText = "SELECT Naam_Examen, Vak_Examen, Toezichthouders_Id FROM Examen WHERE Id=@Id;";
@@ -317,7 +306,6 @@ public class ExamenPlanner : ControllerBase
                 {
                     if (examenData[0].Toezichthouders_Id.ToString() == UserId)
                     {
-
                         MySqlCommand SelectToezichthouder = new();
                         SelectToezichthouder.CommandText = "SELECT Naam, Achternaam FROM Gebruikers WHERE Id=@Id;";
                         SelectToezichthouder.Parameters.AddWithValue("@Id", examenData[0].Toezichthouders_Id);
@@ -347,7 +335,6 @@ public class ExamenPlanner : ControllerBase
                         examenItem = examenData[0],
                         Toezichterhouders = Toezichthouder,
                         Lokaal = Lokaal[0].Lokaal
-
                     });
                 }
             }

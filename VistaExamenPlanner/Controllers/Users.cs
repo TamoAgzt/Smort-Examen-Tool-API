@@ -5,6 +5,9 @@ using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
+using System.Linq.Expressions;
+using System.Diagnostics.CodeAnalysis;
+using System.Text.Json.Nodes;
 
 namespace VistaExamenPlanner.Controllers
 {
@@ -87,7 +90,7 @@ namespace VistaExamenPlanner.Controllers
                 _logger.Log(LogLevel.Warning, $"ÇreateUser: Someone tried to create an account with an none vista email.");
                 return;
             }
-            
+
             string HashedWachtwoord = SecurityHandler.BcrypyBasicEncryption(account.Wachtwoord!);
 
             Rol NewUserRol = Rol.Student;
@@ -119,7 +122,7 @@ namespace VistaExamenPlanner.Controllers
                 {
                     InsertUser.CommandText = "INSERT INTO Gebruikers (Rol_Id, Naam, Achternaam, Email, Wachtwoord) VALUES (@Rol, @Naam, @Achternaam, @Email, @Wachtwoord);";
 
-                    if(NewUserRol == Rol.Student)
+                    if (NewUserRol == Rol.Student)
                     {
                         InsertUser.CommandText += "INSERT INTO Student (studenten_nummer, Gebruikers_Id, Klas_Id) VALUES (@StudentenNummer, LAST_INSERT_ID(), (SELECT Id FROM Klas WHERE Naam=@NaamKlas));";
                         InsertUser.Parameters.AddWithValue("@StudentenNummer", RegexAndTextHandler.GetStudentNumber(account.Email));
@@ -144,6 +147,7 @@ namespace VistaExamenPlanner.Controllers
         public LoginReturnData? LoginUser(LoginObject Login)
         {
             string UserDataSelect = "";
+            string Rol = User.FindFirstValue("Rol");
 
             if (Login == null)
             {
@@ -162,24 +166,33 @@ namespace VistaExamenPlanner.Controllers
                 MySqlCommand selectUser = new MySqlCommand();
                 selectUser.CommandText = "SELECT Id, Email, Wachtwoord, Rol_Id FROM Gebruikers WHERE Email=@Email;";
                 selectUser.Parameters.AddWithValue("@Email", Login.Email);
-                database.Select(selectUser);
                 UserDataSelect = database.Select(selectUser);
             }
 
             UserData[] LoginDataDatabase = JsonConvert.DeserializeObject<UserData[]>(UserDataSelect)!;
 
+            if (LoginDataDatabase[0].Rol_Id == 3)
+            {
+                if (LoginDataDatabase[0].isLoggedIn)
+                {
+                    _logger.Log(LogLevel.Information, "The user is already logged in.");
+                    return null;
+                }
+                if (LoginDataDatabase[0].isLoggedIn == false) LoginDataDatabase[0].isLoggedIn = true;
+            }
 
             if (SecurityHandler.VerifyPassword(Login.Wachtwoord, LoginDataDatabase[0].Wachtwoord))
             {
                 return new LoginReturnData()
                 {
                     Token = JwtTokenHandler.GenerateToken(LoginDataDatabase[0].Rol_Id, LoginDataDatabase[0].Id),
-                    Rol = LoginDataDatabase[0].Rol_Id,  
+                    Rol = LoginDataDatabase[0].Rol_Id,
+                    isLoggedIn = !LoginDataDatabase[0].isLoggedIn
                 };
+
             }
 
             _logger.Log(LogLevel.Information, $"Login: User with Id:{LoginDataDatabase[0].Id}  and rol:{(Rol)LoginDataDatabase[0].Rol_Id} has logged in.");
-
             return null;
         }
 
@@ -191,7 +204,8 @@ namespace VistaExamenPlanner.Controllers
             string Rol = User.FindFirstValue("Rol");
             int Id = 0;
 
-            if (!Int32.TryParse(User.FindFirstValue("Id"), out Id)) {
+            if (!Int32.TryParse(User.FindFirstValue("Id"), out Id))
+            {
                 _logger.Log(LogLevel.Warning, $"UpdateUser: No Valid Id was given. Given Id {Id}.");
                 return "No Valid Id";
             }
@@ -248,7 +262,6 @@ namespace VistaExamenPlanner.Controllers
             _logger.Log(LogLevel.Information, $"UpdateUserPassword: User Id:{Id} Has Changed his/her password.");
 
             return "Updated";
-
         }
 
         [Authorize]
@@ -272,7 +285,6 @@ namespace VistaExamenPlanner.Controllers
 
             return "BYE BYE";
         }
-
 
         [Authorize]
         [HttpGet]
