@@ -22,7 +22,6 @@ namespace VistaExamenPlanner
                     .AddJsonFile("appsettings.json", false)
                     .AddJsonFile($"appsettings.{environmentName}.json", true)
                     .AddJsonFile("serilog.json", false)
-                    .AddJsonFile("JWTsettings.json", false)
                     .AddEnvironmentVariables();
 
                 }).ConfigureWebHostDefaults(webBuilder =>

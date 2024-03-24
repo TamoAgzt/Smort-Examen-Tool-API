@@ -213,7 +213,6 @@ C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExam
 C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231003.json
 C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\appsettings.json
-C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\JWTsettings.json
 C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20230918.json
 C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20230919.json
 C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20230920.json
@@ -434,3 +433,6 @@ C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\
 C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231124.json
 C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231125.json
 C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231126.json
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\obj\Debug\net6.0\VistaExamenPlanner.sourcelink.json
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20231217.json
+C:\Users\ecola\Documents\gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner\bin\Debug\net6.0\logs\Smorts-20240324.json
