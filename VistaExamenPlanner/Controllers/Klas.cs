@@ -62,7 +62,7 @@ namespace VistaExamenPlanner.Controllers
             string Rol = User.FindFirstValue("Rol");
             if (Rol == "" || Rol != "3")
             {
-                
+                _logger.Log(LogLevel.Information, $"CreateKlas: Someone without the rights tried to create a class.");
                 return;
             }
 

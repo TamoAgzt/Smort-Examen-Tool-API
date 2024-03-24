@@ -24,6 +24,7 @@ public class ExamenPlanner : ControllerBase
     [HttpGet("GetExamens")]
     public string GetExamensList()
     {
+
         using (DatabaseHandler database = new())
         {
             MySqlCommand command = new();
@@ -57,6 +58,13 @@ public class ExamenPlanner : ControllerBase
             throw new ArgumentNullException(nameof(examen));
         }
 
+        string Rol = User.FindFirstValue("Rol");
+        if (Rol == "" || Rol != "3")
+        {
+            _logger.Log(LogLevel.Warning, $"AddExamen: Someone without the rights tried to create an exam.");
+            return;
+        }
+
         using (DatabaseHandler database = new())
         {
             MySqlCommand command = new();
@@ -78,6 +86,13 @@ public class ExamenPlanner : ControllerBase
             throw new ArgumentNullException(nameof(examen));
         }
 
+        string Rol = User.FindFirstValue("Rol");
+        if (Rol == "" || Rol != "3")
+        {
+            _logger.Log(LogLevel.Warning, $"UpdateExamen: Someone without the rights tried to update an exam.");
+            return;
+        }
+
         using (DatabaseHandler database = new())
         {
             MySqlCommand command = new MySqlCommand();
@@ -95,6 +110,13 @@ public class ExamenPlanner : ControllerBase
     [HttpPost("DeleteExamen")]
     public void DeleteExamen(int IdToDropTable)
     {
+        string Rol = User.FindFirstValue("Rol");
+        if (Rol == "" || Rol != "3")
+        {
+            _logger.Log(LogLevel.Warning, $"DeleteExamen: Someone without the rights tried to Delete an exam.");
+            return;
+        }
+
         using (DatabaseHandler database = new())
         {
             MySqlCommand command = new MySqlCommand();
@@ -239,7 +261,6 @@ public class ExamenPlanner : ControllerBase
         }
     }
 
-    //TODO Maak toegankelijke voor de toezichthouders
     [Authorize]
     [HttpGet("GetExamesForAMonth")]
     public List<ExamenWeekItem>? GetExamesForAMonth(int month = 0, int year = 0)

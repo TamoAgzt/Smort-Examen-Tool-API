@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VistaExamenPlanner.Extensions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0abbbb48884a095c9fb9d8e6c91f7f1b677f7db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66c87a233e2aea0637bcd57eb703d3932f5a799c")]
 [assembly: System.Reflection.AssemblyProductAttribute("VistaExamenPlanner.Extensions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VistaExamenPlanner.Extensions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

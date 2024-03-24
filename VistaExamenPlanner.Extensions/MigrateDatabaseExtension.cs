@@ -27,10 +27,6 @@ namespace VistaExamenPlanner.Extensions
                 AddRoot.Parameters.AddWithValue("@LastName", MigrateLastName);
                 database.Insert(AddRoot);
 
-                MigratePassword = "";
-                MigrateLastName = "";
-                MigrateEmail = "";
-                MigrateNaam = "";
             }
         }
     }
