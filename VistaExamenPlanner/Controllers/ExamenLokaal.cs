@@ -68,7 +68,6 @@ namespace VistaExamenPlanner.Controllers
         [HttpDelete("DeleteLokaal")]
         public void DeleteLokaal(int IdToDropTable)
         {
-
             string Rol = User.FindFirstValue("Rol");
             if (Rol == "" || Rol != "3")
             {
@@ -78,7 +77,6 @@ namespace VistaExamenPlanner.Controllers
 
             using (DatabaseHandler database = new())
             {
-
                 MySqlCommand DropFromAgenda = new MySqlCommand();
 
                 DropFromAgenda.CommandText = $"DELETE FROM AgendaItem WHERE Lokaal_Id = @IdToDropTable;";
