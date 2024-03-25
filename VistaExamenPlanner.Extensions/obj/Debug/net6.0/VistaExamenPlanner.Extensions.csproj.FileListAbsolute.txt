@@ -15,7 +15,6 @@ C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\bin\Debu
 C:\Users\ecola\Desktop\VistaExamenPlanner\VistaExamenPlanner.Extensions\obj\Debug\net6.0\VistaExamenPlanner.Extensions.csproj.CopyComplete
 C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Extensions.deps.json
 C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Extensions.dll
-C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\bin\Debug\net6.0\ref\VistaExamenPlanner.Extensions.dll
 C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Extensions.pdb
 C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Handler.dll
 C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Handler.pdb
@@ -62,3 +61,6 @@ C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\obj\Debug\net6.0\refint\VistaExamenPlanner.Extensions.dll
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\obj\Debug\net6.0\VistaExamenPlanner.Extensions.pdb
 C:\Users\devilskey\Documents\Gitkraken\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\obj\Debug\net6.0\ref\VistaExamenPlanner.Extensions.dll
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Objecten.dll
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\bin\Debug\net6.0\VistaExamenPlanner.Objecten.pdb
+C:\Users\milan\exameplanner_smort\exame-tool-api\Smort-Examen-Tool-API\VistaExamenPlanner.Extensions\obj\Debug\net6.0\refint\VistaExamenPlanner.Extensions.dll

@@ -93,7 +93,7 @@ namespace VistaExamenPlanner.Controllers
             {
                 MySqlCommand DeleteKlas = new MySqlCommand();
 
-                DeleteKlas.CommandText = "DELETE FROM User WHERE Klas_Id=@Id; DELETE FROM AgendaItem WHERE Klas_Id=@Id; DELETE FROM Klas WHERE Id=@Id;";
+                DeleteKlas.CommandText = "DELETE FROM AgendaItem WHERE Klas_Id=@Id; DELETE FROM Klas WHERE Id=@Id;";
                 DeleteKlas.Parameters.AddWithValue("@Id", id);
 
                 database.Delete(DeleteKlas);

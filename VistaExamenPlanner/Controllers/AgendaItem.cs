@@ -77,7 +77,7 @@ namespace VistaExamenPlanner.Controllers
         }
 
         [Authorize]
-        [HttpPost("DeleteAgendaItem")]
+        [HttpDelete("DeleteAgendaItem")]
         public void DeleteAgendaItem(int IdToDropTable)
         {
             using (DatabaseHandler database = new())

@@ -3779,23 +3779,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ecola\\.nuget\\packages\\": {},
+    "C:\\Users\\milan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
+      "projectUniqueName": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
       "projectName": "VistaExamenPlanner",
-      "projectPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
-      "packagesPath": "C:\\Users\\ecola\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner\\obj\\",
+      "projectPath": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner\\VistaExamenPlanner.csproj",
+      "packagesPath": "C:\\Users\\milan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ecola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\milan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3804,21 +3804,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {
-              "projectPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj"
+            "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj": {
+              "projectPath": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Extensions\\VistaExamenPlanner.Extensions.csproj"
             },
-            "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
-              "projectPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
+            "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj": {
+              "projectPath": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Handler\\VistaExamenPlanner.Handler.csproj"
             },
-            "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj": {
-              "projectPath": "C:\\Users\\ecola\\Documents\\gitkraken\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj"
+            "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj": {
+              "projectPath": "C:\\Users\\milan\\exameplanner_smort\\exame-tool-api\\Smort-Examen-Tool-API\\VistaExamenPlanner.Objecten\\VistaExamenPlanner.Objecten.csproj"
             }
           }
         }
@@ -3873,7 +3872,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
